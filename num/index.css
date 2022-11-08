@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    position: relative;
+    font-family: 'New Rocker', cursive;
+}
+
+#main{
+    width: 60%;
+    height: 330px;
+    padding: 30px 30px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+#main span {
+    cursor: pointer;
+    margin: 0px 5px 5px 5px;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: var(--sec-primary-color);
+    color: yellow;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    box-shadow: 0px 0px 2px 0.3px white;
+}
+
+#sidebar button{
+    position: absolute;
+    box-sizing: content-box;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: white;
+    background: none;
+}
+
+#right{
+    right: 17%;
+    border: none;
+    background: none;
+}
+
+#left{
+    right: 83%;
+    border: none;
+    background: none;
+}
+
+#apply{
+    top: 35%;
+    right: 17%; 
+}
+
+#apply i{
+    font-size: x-large !important;
+}
+
+button i {
+    font-size: 20px;
+}
+
+span:hover{
+    transition: 0.2s ease all;
+    color: black !important;
+    background-color: yellow !important;
+    box-shadow: 0px 0px 10px 0.3px black inset !important;
+}
+
+button:hover { 
+    transition: 0.2s ease all;
+    color: rgb(20, 197, 220) !important;
+}
+
+#modal input {
+    font-family: 'New Rocker', cursive;
+}
+
+#modal_btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#modal_btn button{
+    border: none;
+    background-color: black;
+    color: white;
+    width: 45%;
+    padding: 5px ;
+}
+
+.selected{
+    box-shadow: 0px 0px 2px 1px rgb(255, 0, 0) !important;
+    color: crimson !important;
+}
+
+.unable{
+    color: rgba(128, 128, 128, 0.548) !important;
+    pointer-events: none !important;
+    user-select: none !important;
+    box-shadow: inset 20px 20px 40px #96969636, inset -20px -20px 40px #ffffff46 !important;
+}
